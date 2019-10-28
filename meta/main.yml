@@ -1,0 +1,23 @@
+---
+galaxy_info:
+  author: Ross Bannerman
+  description: Bootstrap Arch nodes with Python
+
+  license: BSD / MIT
+
+  min_ansible_version: 2.8.6
+
+  platforms:
+  - name: Archlinux
+    versions:
+    - all
+
+  galaxy_tags:
+    - arch
+    - archlinux
+    - bootstrap
+    - python
+
+dependencies: []
+# List your role dependencies here, one per line. Be sure to remove the '[]' above,
+# if you add dependencies to this list.

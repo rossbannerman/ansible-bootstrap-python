@@ -1,0 +1,9 @@
+---
+- name: check if python is already installed
+  stat:
+    path: /usr/bin/python
+  register: python_installed
+
+- name: install python
+  raw: pacman -Sy && pacman -S python --noconfirm
+  when: not python_installed.stat.exists
